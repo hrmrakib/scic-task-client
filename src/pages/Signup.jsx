@@ -81,7 +81,7 @@ const SignUp = () => {
 
   return (
     <div className='bg-[#F2F3F3] bg-cover flex items-center justify-center min-h-screen'>
-      <div className='relative min-h-[calc(100vh-100px)] max-w-xl px-20 py-5 mx-auto bg-white border rounded-lg shadow'>
+      <div className='relative min-h-[calc(100vh-100px)] max-w-xl px-6 lg:px-20 py-5 mx-auto bg-white border rounded-lg shadow'>
         <Link to='/' className='absolute left-1 top-1 border rounded-full p-2'>
           <IoHomeOutline className='text-2xl text-purple-600' />
         </Link>
@@ -171,7 +171,7 @@ const SignUp = () => {
           </div>
         </div>
 
-        <p className='mt-2'>
+        <p className='mt-2 text-center'>
           Already have an account? Please
           <Link to='/login' className='ml-2 font-semibold'>
             Login

@@ -54,7 +54,7 @@ const Login = () => {
 
   return (
     <div className='bg-[#F2F3F3] bg-cover flex items-center justify-center min-h-screen'>
-      <div className='relative min-h-[calc(100vh-100px)] max-w-xl px-20 py-5 mx-auto bg-white border rounded-lg shadow'>
+      <div className='relative min-h-[calc(100vh-100px)] max-w-xl px-6 lg:px-20 py-5 mx-auto bg-white border rounded-lg shadow'>
         <Link to='/' className='absolute left-1 top-1 border rounded-full p-2'>
           <IoHomeOutline className='text-2xl text-purple-600' />
         </Link>
@@ -125,7 +125,7 @@ const Login = () => {
             type='submit'
             className='w-full text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 me-2 mb-2'
           >
-            <span className='w-max mx-auto'>SignIn</span>
+            <span className='w-max mx-auto'>Sign In</span>
           </button>
         </form>
 
@@ -142,8 +142,8 @@ const Login = () => {
           </div>
         </div>
 
-        <p className='mt-2'>
-          Already have an account? Please
+        <p className='mt-2 text-center'>
+          Don't have an account? Please
           <Link to='/signup' className='ml-2 font-semibold'>
             Sign Up
           </Link>
