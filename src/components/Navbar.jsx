@@ -19,15 +19,13 @@ const Navbar = () => {
             {user?.email}{" "}
             <button
               onClick={handleLogout}
-              className='text-white px-2 py-1 rounded bg-pink-500'
+              className='text-white ml-1 px-2 py-1 rounded bg-pink-500'
             >
               Logout
             </button>
           </p>
         ) : (
-          <a href='/' className='hover:underline text-blue-600'>
-            Create User
-          </a>
+          ""
         )}
       </div>
     </nav>

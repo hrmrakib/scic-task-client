@@ -55,24 +55,30 @@ const SignUp = () => {
             displayName: data?.name,
             email: data?.email,
           });
+          navigate("/");
         })
-        .catch((err) => setAnyError(err.message));
+        .catch((err) => {
+          setAnyError(err.message);
+        });
 
-      const userRes = await axiosSecure.post("/user", userDetail);
+      // const userRes = await axiosSecure.post("/user", userDetail);
 
-      console.log(userRes.data);
+      // console.log(userRes.data);
 
-      if (userRes.data?.insertedId) {
-        reset();
-        toast.success("Sign-Up successfully!");
-        // navigate("/");
-      }
+      // if (userRes.data?.insertedId) {
+      //   reset();
+      //   toast.success("Sign-Up successfully!");
+      //   navigate("/");
+      // }
     }
   };
 
   const handleGoogleSignIn = () => {
-    return googleSignIn();
+    googleSignIn().then((res) => {
+      navigate("/");
+    });
   };
+
   return (
     <div className='bg-[#F2F3F3] bg-cover flex items-center justify-center min-h-screen'>
       <div className='relative min-h-[calc(100vh-100px)] max-w-xl px-20 py-5 mx-auto bg-white border rounded-lg shadow'>
@@ -148,7 +154,7 @@ const SignUp = () => {
             type='submit'
             className='w-full text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 me-2 mb-2'
           >
-            <span className='w-max mx-auto'>SignIn</span>
+            <span className='w-max mx-auto'>Sign Up</span>
           </button>
         </form>
 

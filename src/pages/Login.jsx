@@ -15,7 +15,6 @@ const Login = () => {
   const [viewPassword, setViewPassword] = useState(false);
   const [passwordError, setPasswordError] = useState("");
   const [anyError, setAnyError] = useState("");
-  const axiosSecure = useAxiosSecure();
   const { signIn, setUser, googleSignIn } = useAuth();
   const navigate = useNavigate();
 
@@ -37,6 +36,8 @@ const Login = () => {
     } else {
       signIn(email, password)
         .then((res) => {
+          toast.success("Login, successfully!");
+          console.log(res);
           navigate("/");
         })
         .catch((err) => setAnyError(err.message));
@@ -46,7 +47,9 @@ const Login = () => {
   const handleGoogleSignIn = () => {
     setAnyError("");
     setPasswordError("");
-    return googleSignIn();
+    googleSignIn().then((res) => {
+      navigate("/");
+    });
   };
 
   return (
