@@ -33,19 +33,19 @@ const Login = () => {
     setPasswordError("");
 
     if (password.length < 6) {
-      setPasswordError("Password length must be at least 6 characters");
-      return;
+      return setPasswordError("Password length must be at least 6 characters");
     } else {
       signIn(email, password)
         .then((res) => {
-          console.log(res);
-          alert("okkkkkkkk");
+          navigate("/");
         })
         .catch((err) => setAnyError(err.message));
     }
   };
 
   const handleGoogleSignIn = () => {
+    setAnyError("");
+    setPasswordError("");
     return googleSignIn();
   };
 
