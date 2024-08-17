@@ -5,3 +5,7 @@ Instruction for locally run:
 - npm install
 - npm run dev
 
+If you face any challenges:
+Please, inform me:
+hrmrakibs@gmail.com
+https://www.linkedin.com/in/hrmrakib/
