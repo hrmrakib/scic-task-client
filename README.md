@@ -7,5 +7,5 @@ Instruction for locally run:
 
 If you face any challenges:
 Please, inform me:
-hrmrakibs@gmail.com
-https://www.linkedin.com/in/hrmrakib/
+- hrmrakibs@gmail.com
+- https://www.linkedin.com/in/hrmrakib/
