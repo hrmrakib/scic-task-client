@@ -3,6 +3,7 @@ import useAxiosSecure from "../hooks/useAxiosSecure";
 import Footer from "../components/Footer";
 import { GrFormPreviousLink } from "react-icons/gr";
 import { GrFormNextLink } from "react-icons/gr";
+import Navbar from "../components/Navbar";
 
 const Home = () => {
   const [products, setProducts] = useState([]);
@@ -56,74 +57,87 @@ const Home = () => {
   };
 
   return (
-    <div className='w-[94%] mx-auto'>
-      <header>
-        <h1>Product Catalog</h1>
-        <div className='flex items-center justify-between gap-8 my-2'>
-          <input
-            className='outline-none w-96 border border-gray-400 rounded-sm px-2 py-1.5'
-            type='text'
-            placeholder='Search by product name...'
-            value={searchQuery}
-            onChange={handleSearch}
-          />
-          <select onChange={handleCategoryChange} value={category}>
-            <option value=''>All Categories</option>
-            <option value='Electronics'>Electronics</option>
-            <option value='Clothing'>Clothing</option>
-            <option value='Books'>Books</option>
-          </select>
-          <select onChange={handleSortChange} value={sortBy}>
-            <option value=''>Sort By</option>
-            <option value='price'>Price: Low to High</option>
-            <option value='price_desc'>Price: High to Low</option>
-            <option value='date'>Date Added: Newest First</option>
-          </select>
-        </div>
-      </header>
-
-      <div className='product-list grid grid-cols-4 gap-10 my-12'>
-        {products.map((product) => (
-          <div className='product-card border p-5' key={product._id}>
-            <img
-              className='w-full h-60'
-              src={product.image}
-              alt={product.name}
+    <>
+      <Navbar />
+      <div className='w-[94%] mx-auto mt-5'>
+        <header>
+          <div className='flex items-center justify-between flex-wrap gap-8 my-2'>
+            <input
+              className='outline-none w-96 border border-gray-400 rounded-sm px-2 py-1.5'
+              type='text'
+              placeholder='Search by product name...'
+              value={searchQuery}
+              onChange={handleSearch}
             />
-            <h2 className='text-2xl mt-3'>{product.name}</h2>
-            <p className='mb-2'>{product.description}</p>
-            <p>Price: ${product.price}</p>
-            <p>Category: {product.category}</p>
-            <p>Rating: {product.ratings} Stars</p>
-            <p>Added: {new Date(product.createdAt).toLocaleDateString()}</p>
+            <select
+              onChange={handleCategoryChange}
+              className='px-4 py-2 bg-white border border-gray-300 rounded-lg shadow-sm focus:outline-none hover:bg-gray-100 transition duration-200'
+              value={category}
+            >
+              <option value=''>All Categories</option>
+              <option value='Electronics'>Electronics</option>
+              <option value='Clothing'>Clothing</option>
+              <option value='Books'>Books</option>
+            </select>
+
+            <select
+              onChange={handleSortChange}
+              className='px-4 py-2 bg-white border border-gray-300 rounded-lg shadow-sm focus:outline-none hover:bg-gray-100 transition duration-200'
+              value={sortBy}
+            >
+              <option value=''>Sort By</option>
+              <option value='price'>Price: Low to High</option>
+              <option value='price_desc'>Price: High to Low</option>
+              <option value='date'>Date Added: Newest First</option>
+            </select>
           </div>
-        ))}
-      </div>
+        </header>
 
-      <div className='flex items-center justify-center gap-3 my-16'>
-        <button
-          className='border p-2 rounded-3xl bg-gray-200 disabled:cursor-not-allowed'
-          onClick={() => handlePageChange(page - 1)}
-          disabled={page === 1}
-        >
-          <GrFormPreviousLink className='text-lg' />
-        </button>
-        <p>
-          Page <span className='text-blue-600 font-medium'>{page}</span> of{" "}
-          <span className='text-red-600 font-medium'>{totalPages}</span>
-        </p>
-        <button
-          className='border p-2 rounded-3xl bg-gray-200 disabled:cursor-not-allowed'
-          onClick={() => handlePageChange(page + 1)}
-          disabled={page === totalPages}
-        >
-          <GrFormNextLink className='text-lg' />
-        </button>
-      </div>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-center justify-center gap-10 my-12'>
+          {products.map((product) => (
+            <div className='border' key={product._id}>
+              <img
+                className='w-full h-60'
+                src={product.image}
+                alt={product.name}
+              />
+              <div className='bg-gray-100 p-5'>
+                <h2 className='text-2xl'>{product.name}</h2>
+                <p className='mb-2'>{product.description}</p>
+                <p>Price: ${product.price}</p>
+                <p>Category: {product.category}</p>
+                <p>Rating: {product.ratings} Stars</p>
+                <p>Added: {new Date(product.createdAt).toLocaleDateString()}</p>
+              </div>
+            </div>
+          ))}
+        </div>
 
-      {/* footer */}
-      <Footer />
-    </div>
+        <div className='flex items-center justify-center gap-3 my-16'>
+          <button
+            className='border p-2 rounded-3xl bg-gray-200 disabled:cursor-not-allowed'
+            onClick={() => handlePageChange(page - 1)}
+            disabled={page === 1}
+          >
+            <GrFormPreviousLink className='text-lg' />
+          </button>
+          <p>
+            Page <span className='text-blue-600 font-medium'>{page}</span> of{" "}
+            <span className='text-red-600 font-medium'>{totalPages}</span>
+          </p>
+          <button
+            className='border p-2 rounded-3xl bg-gray-200 disabled:cursor-not-allowed'
+            onClick={() => handlePageChange(page + 1)}
+            disabled={page === totalPages}
+          >
+            <GrFormNextLink className='text-lg' />
+          </button>
+        </div>
+
+        {/* footer */}
+        <Footer />
+      </div>
+    </>
   );
 };
 
