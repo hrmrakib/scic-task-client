@@ -15,15 +15,15 @@ const Home = () => {
   }, [page, searchQuery, category, sortBy]);
 
   // TOOD: test code
-  useEffect(() => {
-    fetch("/products.json")
-      .then((res) => res.json())
-      .then((data) => {
-        console.log(data);
-        setProducts(data);
-      })
-      .catch((err) => console.log(err));
-  }, []);
+  // useEffect(() => {
+  //   fetch("/products.json")
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //       console.log(data);
+  //       setProducts(data);
+  //     })
+  //     .catch((err) => console.log(err));
+  // }, []);
 
   console.log(products);
 
