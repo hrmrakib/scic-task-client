@@ -1,0 +1,380 @@
+[
+  {
+    "name": "Wireless Earbuds",
+    "image": "/products/1.jpg",
+    "description": "High-quality wireless earbuds with noise cancellation.",
+    "price": 59.99,
+    "category": "Electronics",
+    "ratings": 4.5,
+    "createdAt": "2024-08-01T10:00:00+06:00"
+  },
+  {
+    "name": "Smartphone",
+    "image": "/products/2.jpg",
+    "description": "Latest model smartphone with advanced features.",
+    "price": 799.99,
+    "category": "Electronics",
+    "ratings": 4.8,
+    "createdAt": "2024-08-02T12:30:00+06:00"
+  },
+  {
+    "name": "Bluetooth Speaker",
+    "image": "/products/3.jpg",
+    "description": "Portable Bluetooth speaker with powerful bass.",
+    "price": 39.99,
+    "category": "Electronics",
+    "ratings": 4.2,
+    "createdAt": "2024-08-03T09:45:00+06:00"
+  },
+  {
+    "name": "Laptop",
+    "image": "/products/4.jpg",
+    "description": "High-performance laptop for work and gaming.",
+    "price": 1199.99,
+    "category": "Electronics",
+    "ratings": 4.7,
+    "createdAt": "2024-08-04T11:15:00+06:00"
+  },
+  {
+    "name": "Smartwatch",
+    "image": "/products/5.jpg",
+    "description": "Stylish smartwatch with health tracking features.",
+    "price": 199.99,
+    "category": "Electronics",
+    "ratings": 4.3,
+    "createdAt": "2024-08-05T14:20:00+06:00"
+  },
+  {
+    "name": "Gaming Console",
+    "image": "/products/6.jpg",
+    "description": "Next-gen gaming console with immersive graphics.",
+    "price": 499.99,
+    "category": "Electronics",
+    "ratings": 4.9,
+    "createdAt": "2024-08-06T13:00:00+06:00"
+  },
+  {
+    "name": "Digital Camera",
+    "image": "/products/7.jpg",
+    "description": "High-resolution digital camera for photography enthusiasts.",
+    "price": 299.99,
+    "category": "Electronics",
+    "ratings": 4.6,
+    "createdAt": "2024-08-07T16:10:00+06:00"
+  },
+  {
+    "name": "4K TV",
+    "image": "/products/8.jpg",
+    "description": "Ultra HD 4K TV with stunning picture quality.",
+    "price": 899.99,
+    "category": "Electronics",
+    "ratings": 4.8,
+    "createdAt": "2024-08-08T10:30:00+06:00"
+  },
+  {
+    "name": "Headphones",
+    "image": "/products/9.jpg",
+    "description": "Noise-cancelling over-ear headphones for immersive sound.",
+    "price": 149.99,
+    "category": "Electronics",
+    "ratings": 4.4,
+    "createdAt": "2024-08-09T12:00:00+06:00"
+  },
+  {
+    "name": "Tablet",
+    "image": "/products/10.jpg",
+    "description": "Portable tablet with high-resolution display.",
+    "price": 329.99,
+    "category": "Electronics",
+    "ratings": 4.5,
+    "createdAt": "2024-08-10T09:20:00+06:00"
+  },
+  {
+    "name": "Running Shoes",
+    "image": "/products/11.jpg",
+    "description": "Comfortable running shoes for everyday wear.",
+    "price": 79.99,
+    "category": "Clothing",
+    "ratings": 4.3,
+    "createdAt": "2024-08-11T15:00:00+06:00"
+  },
+  {
+    "name": "Men's T-Shirt",
+    "image": "/products/12.jpg",
+    "description": "Casual men's t-shirt made from 100% cotton.",
+    "price": 19.99,
+    "category": "Clothing",
+    "ratings": 4.1,
+    "createdAt": "2024-08-12T11:50:00+06:00"
+  },
+  {
+    "name": "Women's Jacket",
+    "image": "/products/13.jpg",
+    "description": "Stylish women's jacket with a comfortable fit.",
+    "price": 89.99,
+    "category": "Clothing",
+    "ratings": 4.5,
+    "createdAt": "2024-08-13T14:30:00+06:00"
+  },
+  {
+    "name": "Jeans",
+    "image": "/products/14.jpg",
+    "description": "Classic denim jeans with a modern cut.",
+    "price": 49.99,
+    "category": "Clothing",
+    "ratings": 4.2,
+    "createdAt": "2024-08-14T13:15:00+06:00"
+  },
+  {
+    "name": "Sunglasses",
+    "image": "/products/15.jpg",
+    "description": "Polarized sunglasses with UV protection.",
+    "price": 29.99,
+    "category": "Clothing",
+    "ratings": 4.7,
+    "createdAt": "2024-08-15T10:45:00+06:00"
+  },
+  {
+    "name": "Winter Coat",
+    "image": "/products/16.jpg",
+    "description": "Warm winter coat with a sleek design.",
+    "price": 119.99,
+    "category": "Clothing",
+    "ratings": 4.6,
+    "createdAt": "2024-08-16T08:30:00+06:00"
+  },
+  {
+    "name": "Watch",
+    "image": "/products/17.jpg",
+    "description": "Elegant wristwatch with a leather band.",
+    "price": 129.99,
+    "category": "Clothing",
+    "ratings": 4.4,
+    "createdAt": "2024-08-17T14:40:00+06:00"
+  },
+  {
+    "name": "Women's Dress",
+    "image": "/products/18.jpg",
+    "description": "Beautiful women's dress perfect for any occasion.",
+    "price": 59.99,
+    "category": "Clothing",
+    "ratings": 4.5,
+    "createdAt": "2024-08-18T13:50:00+06:00"
+  },
+  {
+    "name": "Men's Blazer",
+    "image": "/products/19.jpg",
+    "description": "Tailored men's blazer for formal events.",
+    "price": 149.99,
+    "category": "Clothing",
+    "ratings": 4.3,
+    "createdAt": "2024-08-19T11:20:00+06:00"
+  },
+  {
+    "name": "Leather Wallet",
+    "image": "/products/20.jpg",
+    "description": "Premium leather wallet with multiple compartments.",
+    "price": 39.99,
+    "category": "Clothing",
+    "ratings": 4.6,
+    "createdAt": "2024-08-20T16:00:00+06:00"
+  },
+  {
+    "name": "Formal Shoes",
+    "image": "/products/21.jpg",
+    "description": "Stylish formal shoes for business attire.",
+    "price": 89.99,
+    "category": "Clothing",
+    "ratings": 4.4,
+    "createdAt": "2024-08-21T12:10:00+06:00"
+  },
+  {
+    "name": "Cookware Set",
+    "image": "/products/22.jpg",
+    "description": "Non-stick cookware set for your kitchen.",
+    "price": 79.99,
+    "category": "Electronics",
+    "ratings": 4.2,
+    "createdAt": "2024-08-01T09:00:00+06:00"
+  },
+  {
+    "name": "Vacuum Cleaner",
+    "image": "/products/23.jpg",
+    "description": "Powerful vacuum cleaner with multiple attachments.",
+    "price": 149.99,
+    "category": "Electronics",
+    "ratings": 4.7,
+    "createdAt": "2024-08-02T14:10:00+06:00"
+  },
+  {
+    "name": "Air Conditioner",
+    "image": "/products/24.jpg",
+    "description": "Energy-efficient air conditioner with remote control.",
+    "price": 499.99,
+    "category": "Electronics",
+    "ratings": 4.6,
+    "createdAt": "2024-08-03T15:20:00+06:00"
+  },
+  {
+    "name": "Hair Dryer",
+    "image": "/products/25.jpg",
+    "description": "Compact hair dryer with fast-drying technology.",
+    "price": 29.99,
+    "category": "Electronics",
+    "ratings": 4.1,
+    "createdAt": "2024-08-04T08:40:00+06:00"
+  },
+  {
+    "name": "Iron",
+    "image": "/products/26.jpg",
+    "description": "Steam iron with adjustable temperature settings.",
+    "price": 39.99,
+    "category": "Electronics",
+    "ratings": 4.3,
+    "createdAt": "2024-08-05T11:10:00+06:00"
+  },
+  {
+    "name": "Electric Kettle",
+    "image": "/products/26.jpg",
+    "description": "Fast-boil electric kettle with auto shut-off.",
+    "price": 39.99,
+    "category": "Electronics",
+    "ratings": 4.2,
+    "createdAt": "2024-08-06T12:40:00+06:00"
+  },
+  {
+    "name": "Refrigerator",
+    "image": "/products/28.jpg",
+    "description": "Spacious refrigerator with energy-saving features.",
+    "price": 1099.99,
+    "category": "Electronics",
+    "ratings": 4.7,
+    "createdAt": "2024-08-07T10:00:00+06:00"
+  },
+  {
+    "name": "Washing Machine",
+    "image": "/products/29.jpg",
+    "description": "Front-loading washing machine with smart features.",
+    "price": 699.99,
+    "category": "Electronics",
+    "ratings": 4.5,
+    "createdAt": "2024-08-08T09:50:00+06:00"
+  },
+  {
+    "name": "Novel - Fiction",
+    "image": "/products/30.jpg",
+    "description": "Bestselling fiction novel with an intriguing plot.",
+    "price": 14.99,
+    "category": "Books",
+    "ratings": 4.7,
+    "createdAt": "2024-08-09T12:15:00+06:00"
+  },
+  {
+    "name": "Cookbook",
+    "image": "/products/31.jpg",
+    "description": "Recipe book with easy-to-follow instructions.",
+    "price": 24.99,
+    "category": "Books",
+    "ratings": 4.6,
+    "createdAt": "2024-08-10T13:40:00+06:00"
+  },
+  {
+    "name": "Science Fiction",
+    "image": "/products/32.jpg",
+    "description": "Popular science fiction book with futuristic themes.",
+    "price": 19.99,
+    "category": "Books",
+    "ratings": 4.5,
+    "createdAt": "2024-08-11T15:20:00+06:00"
+  },
+  {
+    "name": "Biography",
+    "image": "/products/33.jpg",
+    "description": "Inspiring biography of a famous personality.",
+    "price": 29.99,
+    "category": "Books",
+    "ratings": 4.8,
+    "createdAt": "2024-08-12T14:30:00+06:00"
+  },
+  {
+    "name": "Mystery Novel",
+    "image": "/products/34.jpg",
+    "description": "Gripping mystery novel with unexpected twists.",
+    "price": 12.99,
+    "category": "Books",
+    "ratings": 4.4,
+    "createdAt": "2024-08-13T11:50:00+06:00"
+  },
+  {
+    "name": "Children's Book",
+    "image": "/products/35.jpg",
+    "description": "Colorful children's book with engaging stories.",
+    "price": 9.99,
+    "category": "Books",
+    "ratings": 4.3,
+    "createdAt": "2024-08-14T10:00:00+06:00"
+  },
+  {
+    "name": "Self-help Book",
+    "image": "/products/36.jpg",
+    "description": "Motivational self-help book for personal growth.",
+    "price": 19.99,
+    "category": "Books",
+    "ratings": 4.7,
+    "createdAt": "2024-08-15T13:10:00+06:00"
+  },
+  {
+    "name": "Travel Guide",
+    "image": "/products/37.jpg",
+    "description": "Comprehensive travel guide for adventurous explorers.",
+    "price": 22.99,
+    "category": "Books",
+    "ratings": 4.5,
+    "createdAt": "2024-08-16T14:50:00+06:00"
+  },
+  {
+    "name": "Art Book",
+    "image": "/products/38.jpg",
+    "description": "Beautiful art book showcasing famous works.",
+    "price": 34.99,
+    "category": "Books",
+    "ratings": 4.6,
+    "createdAt": "2024-08-17T12:20:00+06:00"
+  },
+  {
+    "name": "Historical Novel",
+    "image": "/products/39.jpg",
+    "description": "Epic historical novel set in ancient times.",
+    "price": 15.99,
+    "category": "Books",
+    "ratings": 4.4,
+    "createdAt": "2024-08-18T13:30:00+06:00"
+  },
+  {
+    "name": "Fitness Tracker",
+    "image": "/products/40.jpg",
+    "description": "Wearable fitness tracker with heart rate monitor.",
+    "price": 49.99,
+    "category": "Electronics",
+    "ratings": 4.3,
+    "createdAt": "2024-08-19T14:40:00+06:00"
+  },
+  {
+    "name": "Wireless Mouse",
+    "image": "/products/41.jpg",
+    "description": "Ergonomic wireless mouse with long battery life.",
+    "price": 29.99,
+    "category": "Electronics",
+    "ratings": 4.5,
+    "createdAt": "2024-08-20T15:30:00+06:00"
+  },
+  {
+    "name": "USB Flash Drive",
+    "image": "/products/42.jpg",
+    "description": "High-capacity USB flash drive for data storage.",
+    "price": 14.99,
+    "category": "Electronics",
+    "ratings": 4.4,
+    "createdAt": "2024-08-21T11:00:00+06:00"
+  }
+]

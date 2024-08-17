@@ -11,12 +11,12 @@ import useAuth from "../hooks/useAuth";
 import userIcon from "/user.png";
 import toast, { Toaster } from "react-hot-toast";
 
-const SignUp = () => {
+const Login = () => {
   const [viewPassword, setViewPassword] = useState(false);
   const [passwordError, setPasswordError] = useState("");
   const [anyError, setAnyError] = useState("");
   const axiosSecure = useAxiosSecure();
-  const { createUser, setUser, googleSignIn } = useAuth();
+  const { signIn, setUser, googleSignIn } = useAuth();
   const navigate = useNavigate();
 
   const {
@@ -36,37 +36,12 @@ const SignUp = () => {
       setPasswordError("Password length must be at least 6 characters");
       return;
     } else {
-      const userDetail = {
-        name: data?.name,
-        email: data?.email,
-      };
-
-      createUser(email, password)
-        .then(async (userCredential) => {
-          const user = userCredential?.user;
-          console.log(user);
-
-          await updateProfile(user, {
-            displayName: data?.name,
-          });
-        })
-        .then(() => {
-          setUser({
-            displayName: data?.name,
-            email: data?.email,
-          });
+      signIn(email, password)
+        .then((res) => {
+          console.log(res);
+          alert("okkkkkkkk");
         })
         .catch((err) => setAnyError(err.message));
-
-      const userRes = await axiosSecure.post("/user", userDetail);
-
-      console.log(userRes.data);
-
-      if (userRes.data?.insertedId) {
-        reset();
-        toast.success("Sign-Up successfully!");
-        // navigate("/");
-      }
     }
   };
 
@@ -79,11 +54,9 @@ const SignUp = () => {
         <Toaster position='top-center' />
         <div className='flex flex-col items-center justify-center mb-5'>
           <img className='size-12 mb-2' src={userIcon} alt='' />
-          <h2 className='text-2xl font-bold text-gray-800'>
-            Create a new account
-          </h2>
+          <h2 className='text-2xl font-bold text-gray-800'>Please, login</h2>
           <p className='text-gray-600 font-medium'>
-            Please enter your detail to sign up.
+            Please enter your detail to login.
           </p>
         </div>
 
@@ -173,4 +146,4 @@ const SignUp = () => {
   );
 };
 
-export default SignUp;
+export default Login;
