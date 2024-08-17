@@ -1,31 +1,21 @@
 import React, { useState, useEffect } from "react";
 import useAxiosSecure from "../hooks/useAxiosSecure";
+import Footer from "../components/Footer";
+import { GrFormPreviousLink } from "react-icons/gr";
+import { GrFormNextLink } from "react-icons/gr";
 
 const Home = () => {
   const [products, setProducts] = useState([]);
-  const [searchQuery, setSearchQuery] = useState("");
-  const [category, setCategory] = useState("");
-  const [sortBy, setSortBy] = useState("");
-  const [page, setPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
+  const [sortBy, setSortBy] = useState("");
+  const [category, setCategory] = useState("");
+  const [searchQuery, setSearchQuery] = useState("");
+  const [page, setPage] = useState(1);
   const axiosSecure = useAxiosSecure();
 
   useEffect(() => {
     fetchProducts();
   }, [page, searchQuery, category, sortBy]);
-
-  // TOOD: test code
-  // useEffect(() => {
-  //   fetch("/products.json")
-  //     .then((res) => res.json())
-  //     .then((data) => {
-  //       console.log(data);
-  //       setProducts(data);
-  //     })
-  //     .catch((err) => console.log(err));
-  // }, []);
-
-  console.log(products);
 
   const fetchProducts = async () => {
     try {
@@ -110,23 +100,29 @@ const Home = () => {
         ))}
       </div>
 
-      <footer>
+      <div className='flex items-center justify-center gap-3 my-16'>
         <button
+          className='border p-2 rounded-3xl bg-gray-200 disabled:cursor-not-allowed'
           onClick={() => handlePageChange(page - 1)}
           disabled={page === 1}
         >
-          Previous
+          <GrFormPreviousLink className='text-lg' />
         </button>
-        <span>
-          Page {page} of {totalPages}
-        </span>
+        <p>
+          Page <span className='text-blue-600 font-medium'>{page}</span> of{" "}
+          <span className='text-red-600 font-medium'>{totalPages}</span>
+        </p>
         <button
+          className='border p-2 rounded-3xl bg-gray-200 disabled:cursor-not-allowed'
           onClick={() => handlePageChange(page + 1)}
           disabled={page === totalPages}
         >
-          Next
+          <GrFormNextLink className='text-lg' />
         </button>
-      </footer>
+      </div>
+
+      {/* footer */}
+      <Footer />
     </div>
   );
 };
