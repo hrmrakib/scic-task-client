@@ -70,6 +70,9 @@ const SignUp = () => {
     }
   };
 
+  const handleGoogleSignIn = () => {
+    return googleSignIn();
+  };
   return (
     <div className='bg-[#F2F3F3] bg-cover flex items-center justify-center min-h-screen'>
       <div className='relative min-h-[calc(100vh-100px)] max-w-xl px-20 py-5 mx-auto bg-white border rounded-lg shadow'>
@@ -154,7 +157,7 @@ const SignUp = () => {
         </div>
 
         <div
-          //   onClick={handleGoogle}
+          onClick={handleGoogleSignIn}
           className='flex items-center justify-center px-2 py-2 rounded-md shadow-sm cursor-pointer border'
         >
           <div>
